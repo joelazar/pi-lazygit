@@ -9,7 +9,7 @@ Running `/lazygit` suspends pi's TUI, clears the screen, and gives lazygit the w
 ## Install
 
 ```bash
-pi install npm:pi-lazygit
+pi install npm:@joelazar/lazygit
 ```
 
 lazygit itself has to be on your `PATH`:

@@ -1,6 +1,6 @@
 {
-  "name": "pi-lazygit",
-  "version": "0.1.0",
+  "name": "@joelazar/lazygit",
+  "version": "1.0.0",
   "description": "Open lazygit from inside pi with /lazygit or ctrl+shift+g",
   "type": "module",
   "keywords": [
