@@ -2,6 +2,8 @@
 
 Open [lazygit](https://github.com/jesseduffield/lazygit) from inside [pi](https://pi.dev) without leaving your session.
 
+![demo](./assets/demo.gif)
+
 Running `/lazygit` suspends pi's TUI, clears the screen, and gives lazygit the whole terminal. When you quit lazygit, pi comes back exactly where you left it. Handy when pi has staged a pile of changes and you want to stage, split, or discard hunks yourself before telling it to continue.
 
 ## Install
