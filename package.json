@@ -1,0 +1,49 @@
+{
+  "name": "pi-lazygit",
+  "version": "0.1.0",
+  "description": "Open lazygit from inside pi with /lazygit or ctrl+shift+g",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "pi-coding-agent",
+    "extension",
+    "lazygit",
+    "git"
+  ],
+  "author": "Jozsef Gabor Lazar <me@joelazar.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelazar/pi-lazygit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joelazar/pi-lazygit/issues"
+  },
+  "homepage": "https://github.com/joelazar/pi-lazygit#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "files": [
+    "index.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "check": "npm run typecheck && npm pack --dry-run"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.2"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}
