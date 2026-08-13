@@ -27,7 +27,8 @@
   "pi": {
     "extensions": [
       "./index.ts"
-    ]
+    ],
+    "image": "https://raw.githubusercontent.com/joelazar/pi-lazygit/main/assets/demo.gif"
   },
   "files": [
     "index.ts",
