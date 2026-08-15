@@ -12,12 +12,6 @@ Running `/lazygit` suspends pi's TUI, clears the screen, and gives lazygit the w
 pi install npm:@joelazar/lazygit
 ```
 
-lazygit itself has to be on your `PATH`:
-
-```bash
-brew install lazygit
-```
-
 ## Usage
 
 | Trigger        | What it does           |
