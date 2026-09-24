@@ -21,6 +21,12 @@ pi install npm:@joelazar/lazygit
 
 lazygit runs in pi's current working directory, so it picks up whichever repo the session is pointed at.
 
+## Herdr
+
+Inside a [Herdr](https://herdr.dev) pane (`HERDR_ENV=1`), lazygit opens in a 90% Herdr popup instead of taking over pi's terminal, and pi keeps running underneath. The extension links a small bundled Herdr plugin (`pi-lazygit`) on each open, so no Herdr config is needed. If the popup can't open, it falls back to the inline mode.
+
+## Modes
+
 The command only works in interactive TUI mode. In `print`, `json`, or `rpc` mode it reports an error instead of hanging on a terminal that isn't there.
 
 ## Rebinding the shortcut

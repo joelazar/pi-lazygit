@@ -33,7 +33,8 @@
   "files": [
     "index.ts",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "herdr"
   ],
   "scripts": {
     "typecheck": "tsc --noEmit",
