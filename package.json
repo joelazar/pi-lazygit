@@ -1,6 +1,6 @@
 {
   "name": "@joelazar/lazygit",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Open lazygit from inside pi with /lazygit or ctrl+shift+g",
   "type": "module",
   "keywords": [
@@ -34,7 +34,8 @@
     "index.ts",
     "README.md",
     "LICENSE",
-    "herdr"
+    "herdr",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "typecheck": "tsc --noEmit",
