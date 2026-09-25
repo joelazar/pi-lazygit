@@ -2,13 +2,12 @@ id = "pi-lazygit"
 name = "pi-lazygit"
 version = "1.1.0"
 min_herdr_version = "0.9.0"
-description = "lazygit popup opened by the pi-lazygit extension"
+description = "lazygit pane opened by the pi-lazygit extension"
 platforms = ["linux", "macos"]
 
 [[panes]]
 id = "lazygit"
 title = "lazygit"
-placement = "popup"
-width = "90%"
-height = "90%"
+# overlay = temporary zoomed pane; unlike a popup it keeps Herdr's prefix keys working
+placement = "overlay"
 command = ["sh", "-c", "exec lazygit"]

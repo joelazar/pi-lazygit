@@ -1,7 +1,7 @@
 /**
  * pi-lazygit - open lazygit from inside pi.
  *
- * Inside Herdr, `/lazygit` (or ctrl+shift+g) opens lazygit in a Herdr popup.
+ * Inside Herdr, `/lazygit` (or ctrl+shift+g) opens lazygit in a temporary zoomed Herdr pane.
  * Elsewhere it suspends pi's TUI, hands lazygit the whole terminal, and
  * restores pi when lazygit exits.
  */
@@ -29,7 +29,7 @@ function herdr(args: string[]): string | null {
   return null;
 }
 
-function openHerdrPopup(ctx: ExtensionContext): string | null {
+function openHerdrPane(ctx: ExtensionContext): string | null {
   return (
     herdr(["plugin", "link", HERDR_PLUGIN_DIR]) ??
     herdr([
@@ -77,9 +77,9 @@ async function open(ctx: ExtensionContext): Promise<void> {
     return;
   }
   if (process.env.HERDR_ENV === "1") {
-    const error = openHerdrPopup(ctx);
+    const error = openHerdrPane(ctx);
     if (!error) return;
-    ctx.ui.notify(`Herdr popup failed, running inline: ${error}`, "warning");
+    ctx.ui.notify(`Herdr pane failed, running inline: ${error}`, "warning");
   }
   await runInline(ctx);
 }

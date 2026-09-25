@@ -23,7 +23,7 @@ lazygit runs in pi's current working directory, so it picks up whichever repo th
 
 ## Herdr
 
-Inside a [Herdr](https://herdr.dev) pane (`HERDR_ENV=1`), lazygit opens in a 90% Herdr popup instead of taking over pi's terminal, and pi keeps running underneath. The extension links a small bundled Herdr plugin (`pi-lazygit`) on each open, so no Herdr config is needed. If the popup can't open, it falls back to the inline mode.
+Inside a [Herdr](https://herdr.dev) pane (`HERDR_ENV=1`), lazygit opens in a temporary zoomed Herdr pane instead of taking over pi's terminal, and pi keeps running underneath. Herdr's prefix keys keep working there, so you can switch tabs or workspaces without closing lazygit. The extension links a small bundled Herdr plugin (`pi-lazygit`) on each open, so no Herdr config is needed. If the pane can't open, it falls back to the inline mode.
 
 ## Modes
 

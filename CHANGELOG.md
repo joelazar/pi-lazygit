@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Inside Herdr, lazygit now opens in a temporary zoomed pane (`overlay`) instead of a popup. Popups are session-modal and swallow Herdr's prefix key, so you couldn't switch tabs or workspaces while lazygit was open.
+
 ## 1.1.0 - 2026-09-24
 
 ### Added
